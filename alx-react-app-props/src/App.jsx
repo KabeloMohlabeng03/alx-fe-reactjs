@@ -10,10 +10,15 @@ import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import React from 'react';
 import UserProfile from './components/UserProfile';
+import React from 'react';
+import ProfilePage from './ProfilePage';
+import UserContext from './UserContext';
 
 
 function App() {
   const [count, setCount] = useState(0)
+  const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
+
 
   return (
     <>
@@ -50,6 +55,9 @@ function App() {
             <UserProfile name="Bob" age="30" bio="Enjoys cooking and reading" />
             <UserProfile name="Charlie" age="28" bio="Passionate about coding and travel" />
         </div>
+        <UserContext.Provider value={userData}>
+            <ProfilePage />
+        </UserContext.Provider>
     </>
   )
 }
