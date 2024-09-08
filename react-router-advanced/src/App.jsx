@@ -27,7 +27,7 @@ function App() {
           <Route path="settings" element={<ProfileSettings />} />
         </ProtectedRoute>
         <Route path="/user/:userId" element={<UserProfile />} />
-        <Route path="/blog/:postId" element={<BlogPost />} />
+        <Route path="/blog/:id" element={<BlogPost />} /> {/* Dynamic Route for Blog Post */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
