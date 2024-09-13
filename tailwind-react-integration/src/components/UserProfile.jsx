@@ -6,7 +6,7 @@ function UserProfile() {
         src="https://via.placeholder.com/150"
         alt="User"
       />
-      <h1 className="text-lg sm:text-xl md:text-2xl text-blue-800 my-4">
+      <h1 className="text-lg sm:text-xl md:text-xl text-blue-800 my-4">
         John Doe
       </h1>
       <p className="text-sm sm:text-base md:text-lg text-gray-600">
