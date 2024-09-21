@@ -1,14 +1,53 @@
 [
-    {
-      "id": 1,
-      "title": "Spaghetti Carbonara",
-      "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-      "image": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 2,
-      "title": "Chicken Tikka Masala",
-      "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-      "image": "https://via.placeholder.com/150"
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/600x400",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g Pecorino cheese",
+      "50g Parmesan",
+      "Black pepper",
+      "Salt"
+    ],
+    "instructions": [
+      "Boil the spaghetti in salted water according to package instructions.",
+      "In a separate pan, cook the pancetta until crispy.",
+      "Beat the eggs in a bowl, then mix in the cheeses and pepper.",
+      "Drain the spaghetti and combine with the pancetta.",
+      "Remove from heat and quickly mix in the egg and cheese mixture.",
+      "Serve immediately with extra cheese and pepper."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "image": "https://via.placeholder.com/600x400",
+    "ingredients": [
+      "500g chicken breast, cubed",
+      "200g yogurt",
+      "2 tbsp tikka masala paste",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1 tbsp ginger, grated",
+      "400g canned tomatoes",
+      "200ml cream",
+      "2 tbsp vegetable oil",
+      "Salt",
+      "Fresh cilantro for garnish"
+    ],
+    "instructions": [
+      "Marinate the chicken with yogurt and tikka masala paste for at least 1 hour.",
+      "Heat oil in a pan and sauté onions until golden.",
+      "Add garlic and ginger, cook for another minute.",
+      "Add marinated chicken and cook until browned.",
+      "Pour in canned tomatoes and simmer for 20 minutes.",
+      "Stir in cream and cook for an additional 5 minutes.",
+      "Season with salt to taste and garnish with fresh cilantro before serving."
+    ]
+  }
+]
