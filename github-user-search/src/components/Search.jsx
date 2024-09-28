@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 import { fetchUsers } from '../services/githubService'; 
 
 function Search() {
-  const [query, setQuery] = useState(''); 
+  const [query, setQuery] = useState('');
   const [location, setLocation] = useState('');
-  const [minRepos, setMinRepos] = useState(''); 
-  const [users, setUsers] = useState([]); 
-  const [loading, setLoading] = useState(false); 
-  const [error, setError] = useState(null);
+  const [minRepos, setMinRepos] = useState('');
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null); 
   const [page, setPage] = useState(1);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setError(null);
-    setPage(1); 
+    setPage(1);
     try {
-      const data = await fetchUsers(query, location, minRepos, 1); 
-      setUsers(data.items);
+      const data = await fetchUsers(query, location, minRepos, 1);
+      setUsers(data.items); 
     } catch (error) {
       setError('Error fetching data');
     } finally {
@@ -29,9 +29,9 @@ function Search() {
     setLoading(true);
     try {
       const nextPage = page + 1;
-      const { items } = await fetchUsers(query, location, minRepos, nextPage); // Fetch the next page
-      setUsers([...users, ...items]); 
-      setPage(nextPage); 
+      const { items } = await fetchUsers(query, location, minRepos, nextPage); // Fetch the next page using fetchUsers
+      setUsers([...users, ...items]);
+      setPage(nextPage);
     } catch (error) {
       setError('Error loading more results');
     } finally {
@@ -100,7 +100,7 @@ function Search() {
         <button
           onClick={loadMore}
           className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-500 mt-4"
-          disabled={loading}
+          disabled={loading} 
         >
           {loading ? 'Loading more...' : 'Load More'}
         </button>
